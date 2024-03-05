@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button clearButton, percentButton, deleteButton, divisionButton,
             sevenButton, eightButton, nineButton, multiplyButton,
             fourButton, fiveButton, sixButton, minusButton,
-            oneButton, twoButton, threeButton, SumButton,
+            oneButton, twoButton, threeButton, sumButton,
             zeroButton, pointButton, equalButton;
     EditText questionView;
     TextView answerView;
@@ -72,8 +72,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         threeButton = findViewById(R.id.threeButton);
         threeButton.setOnClickListener(this);
 
-        SumButton = findViewById(R.id.SumButton);
-        SumButton.setOnClickListener(this);
+        sumButton = findViewById(R.id.SumButton);
+        sumButton.setOnClickListener(this);
 
         zeroButton = findViewById(R.id.zeroButton);
         zeroButton.setOnClickListener(this);
@@ -88,7 +88,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         int id = view.getId();
-        if (id == R.id.clearButton) {
+        if (id == R.id.equalButton) {
+            try {
+                OperationCalculation();
+                // Đổi màu của answerView thành màu đỏ
+                answerView.setTextColor(getResources().getColor(R.color.teal)); // Sử dụng màu đỏ từ resources
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+        else if (id == R.id.clearButton) {
             try {
                 questionView.setText("");
                 answerView.setText("");
@@ -219,10 +228,50 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             } catch (Exception e) {
                 e.printStackTrace();
             }
-        }
+        } else if (id == R.id.sinButton) {
+            // Xử lý khi nhấn vào nút sinButton
+            questionView.append("sin(");
+            try {
+                OperationCalculation();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        } else if (id == R.id.cosButton) {
+            // Xử lý khi nhấn vào nút cosButton
+            questionView.append("cos(");
+            try {
+                OperationCalculation();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        } else if (id == R.id.tanButton) {
+            // Xử lý khi nhấn vào nút tanButton
+            questionView.append("tan(");
+            try {
+                OperationCalculation();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        } else if (id == R.id.exponentialButton) {
+            // Xử lý khi nhấn vào nút exponentialButton
+            questionView.append("^");
+            try {
+                OperationCalculation();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        } else if (id == R.id.squareButton) {
+            // Xử lý khi nhấn vào nút squareButton
+            questionView.append("^2");
+            try {
+                OperationCalculation();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
     }
+}
 
-    public void OperationCalculation() {
+    private void OperationCalculation() {
         double ans = 0, num, previousAns = 0;
         String value = "";
         int length, ascii;
@@ -296,4 +345,4 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         }
     }
-}
+    }

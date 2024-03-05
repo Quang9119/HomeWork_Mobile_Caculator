@@ -3,12 +3,12 @@ plugins {
 }
 
 android {
-    namespace = "com.example.calculator"
+    namespace = "com.example.myapplication"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.calculator"
-        minSdk = 24
+        applicationId = "com.example.myapplication"
+        minSdk = 28
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -19,7 +19,10 @@ android {
     buildTypes {
         release {
             isMinifyEnabled = false
-            proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
         }
     }
     compileOptions {

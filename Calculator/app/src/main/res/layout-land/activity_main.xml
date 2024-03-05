@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout  xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -22,7 +22,7 @@
     <EditText
         android:id="@+id/questionView"
         android:layout_width="match_parent"
-        android:layout_height="66dp"
+        android:layout_height="110dp"
         android:gravity="end|bottom"
         android:textColor="@color/white"
         android:textSize="50sp"
@@ -40,583 +40,592 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
+
         android:gravity="bottom"
-        android:layout_marginBottom="10dp">
+        android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="2dp"
-            android:layout_marginBottom="2dp">
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:orientation="horizontal">
 
             <Button
                 android:id="@+id/twondButton"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.18"
-                android:text="2nd"
                 android:layout_marginStart="2dp"
                 android:layout_marginEnd="2dp"
-                android:padding="18dp"
-                android:textSize="22sp"
-                android:textColor="@color/teal"
+                android:layout_weight="0.18"
+
                 android:background="@drawable/button_radius"
-                app:backgroundTint="@color/white"/>
+                android:padding="18dp"
+                android:text="2nd"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:typeface="sans"
+                app:backgroundTint="@color/white" />
 
             <Button
                 android:id="@+id/degButton"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.18"
-                android:text="deg"
+                android:layout_height="match_parent"
                 android:layout_marginStart="2dp"
                 android:layout_marginEnd="2dp"
-                android:padding="20dp"
-                android:textSize="22sp"
-                android:textColor="@color/teal"
+                android:layout_weight="0.18"
                 android:background="@drawable/button_radius"
-                app:backgroundTint="@color/white"/>
+                android:padding="20dp"
+                android:text="deg"
+                android:textColor="@color/teal"
+                android:textSize="22sp"
+                app:backgroundTint="@color/white" />
 
             <Button
                 android:id="@+id/sinButton"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.18"
-                android:text="sin"
+                android:layout_height="match_parent"
                 android:layout_marginStart="2dp"
                 android:layout_marginEnd="2dp"
-                android:padding="20dp"
-                android:textSize="22sp"
-                android:textColor="@color/teal"
+                android:layout_weight="0.18"
                 android:background="@drawable/button_radius"
-                app:backgroundTint="@color/white"/>
+                android:padding="20dp"
+                android:text="sin"
+                android:textColor="@color/teal"
+                android:textSize="22sp"
+                app:backgroundTint="@color/white" />
 
             <Button
                 android:id="@+id/cosButton"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.18"
-                android:text="cos"
                 android:layout_marginStart="2dp"
                 android:layout_marginEnd="2dp"
-                android:padding="20dp"
-                android:textSize="22sp"
-                android:textColor="@color/teal"
+                android:layout_weight="0.18"
                 android:background="@drawable/button_radius"
-                app:backgroundTint="@color/white"/>
+                android:padding="20dp"
+                android:text="cos"
+                android:textColor="@color/teal"
+                android:textSize="22sp"
+                app:backgroundTint="@color/white" />
 
             <Button
                 android:id="@+id/tanButton"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.18"
-                android:text="tan"
                 android:layout_marginStart="2dp"
                 android:layout_marginEnd="2dp"
-                android:padding="20dp"
-                android:textSize="22sp"
-                android:textColor="@color/teal"
+                android:layout_weight="0.18"
                 android:background="@drawable/button_radius"
-                app:backgroundTint="@color/white"/>
+                android:padding="20dp"
+                android:text="tan"
+                android:textColor="@color/teal"
+                android:textSize="22sp"
+                app:backgroundTint="@color/white" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="2dp"
-            android:layout_marginBottom="2dp">
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:orientation="horizontal">
 
             <Button
                 android:id="@+id/exponentialButton"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.18"
-                android:text="@string/luy_thua"
+                android:layout_height="match_parent"
                 android:layout_marginStart="2dp"
                 android:layout_marginEnd="2dp"
-                android:padding="20dp"
-                android:textSize="22sp"
-                android:textColor="@color/teal"
+                android:layout_weight="0.18"
                 android:background="@drawable/button_radius"
-                app:backgroundTint="@color/white"/>
+                android:padding="20dp"
+                android:text="@string/luy_thua"
+                android:textColor="@color/teal"
+                android:textSize="22sp"
+                app:backgroundTint="@color/white" />
 
             <Button
                 android:id="@+id/lgButton"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.18"
-                android:text="lg"
                 android:layout_marginStart="2dp"
                 android:layout_marginEnd="2dp"
-                android:padding="20dp"
-                android:textSize="22sp"
-                android:textColor="@color/teal"
+                android:layout_weight="0.18"
                 android:background="@drawable/button_radius"
-                app:backgroundTint="@color/white"/>
+                android:padding="20dp"
+                android:text="lg"
+                android:textColor="@color/teal"
+                android:textSize="22sp"
+                app:backgroundTint="@color/white" />
 
             <Button
                 android:id="@+id/lnButton"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.18"
-                android:text="ln"
                 android:layout_marginStart="2dp"
                 android:layout_marginEnd="2dp"
-                android:padding="20dp"
-                android:textSize="22sp"
-                android:textColor="@color/teal"
+                android:layout_weight="0.18"
                 android:background="@drawable/button_radius"
-                app:backgroundTint="@color/white"/>
+                android:padding="20dp"
+                android:text="ln"
+                android:textColor="@color/teal"
+                android:textSize="22sp"
+                app:backgroundTint="@color/white" />
 
             <Button
                 android:id="@+id/leftParenthesisButton"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.18"
-                android:text="("
                 android:layout_marginStart="2dp"
                 android:layout_marginEnd="2dp"
-                android:padding="20dp"
-                android:textSize="22sp"
-                android:textColor="@color/teal"
+                android:layout_weight="0.18"
                 android:background="@drawable/button_radius"
-                app:backgroundTint="@color/white"/>
+                android:padding="20dp"
+                android:text="("
+                android:textColor="@color/teal"
+                android:textSize="22sp"
+                app:backgroundTint="@color/white" />
 
             <Button
                 android:id="@+id/rightParenthesisButton"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.18"
-                android:text=")"
                 android:layout_marginStart="2dp"
                 android:layout_marginEnd="2dp"
-                android:padding="20dp"
-                android:textSize="22sp"
-                android:textColor="@color/teal"
+                android:layout_weight="0.18"
                 android:background="@drawable/button_radius"
-                app:backgroundTint="@color/white"/>
+                android:padding="20dp"
+                android:text=")"
+                android:textColor="@color/teal"
+                android:textSize="22sp"
+                app:backgroundTint="@color/white" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
+
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="2dp"
-            android:layout_marginBottom="2dp">
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:orientation="horizontal">
 
             <Button
                 android:id="@+id/squareButton"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.18"
-                android:text="√"
                 android:layout_marginStart="2dp"
                 android:layout_marginEnd="2dp"
-                android:padding="20dp"
-                android:textSize="22sp"
-                android:textColor="@color/teal"
+                android:layout_weight="0.18"
                 android:background="@drawable/button_radius"
-                app:backgroundTint="@color/white"/>
+                android:padding="20dp"
+                android:text="√"
+                android:textColor="@color/teal"
+                android:textSize="22sp"
+                app:backgroundTint="@color/white" />
 
             <Button
                 android:id="@+id/clearButton"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.18"
-                android:text="AC"
                 android:layout_marginStart="2dp"
                 android:layout_marginEnd="2dp"
+                android:layout_weight="0.18"
+                android:background="@drawable/button_radius"
                 android:padding="20dp"
+                android:text="AC"
+                android:textColor="@color/teal"
                 android:textSize="22sp"
                 android:textStyle="bold"
-                android:textColor="@color/teal"
-                android:background="@drawable/button_radius"
-                app:backgroundTint="@color/gray"/>
+                app:backgroundTint="@color/gray" />
 
             <Button
                 android:id="@+id/deleteButton"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.18"
-                android:text="⌫"
                 android:layout_marginStart="2dp"
                 android:layout_marginEnd="2dp"
+                android:layout_weight="0.18"
+                android:background="@drawable/button_radius"
                 android:padding="20dp"
+                android:text="⌫"
+                android:textColor="@color/teal"
                 android:textSize="22sp"
                 android:textStyle="bold"
-                android:textColor="@color/teal"
-                android:background="@drawable/button_radius"
-                app:backgroundTint="@color/gray"/>
+                app:backgroundTint="@color/gray" />
 
             <Button
                 android:id="@+id/percentButton"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.18"
-                android:text="%"
                 android:layout_marginStart="2dp"
                 android:layout_marginEnd="2dp"
+                android:layout_weight="0.18"
+                android:background="@drawable/button_radius"
                 android:padding="20dp"
+                android:text="%"
+                android:textColor="@color/teal"
                 android:textSize="22sp"
                 android:textStyle="bold"
-                android:textColor="@color/teal"
-                android:background="@drawable/button_radius"
-                app:backgroundTint="@color/gray"/>
+                app:backgroundTint="@color/gray" />
 
             <Button
                 android:id="@+id/divisionButton"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.18"
-                android:text="÷"
                 android:layout_marginStart="2dp"
                 android:layout_marginEnd="2dp"
+                android:layout_weight="0.18"
+                android:background="@drawable/button_radius"
                 android:padding="20dp"
+                android:text="÷"
+                android:textColor="@color/teal"
                 android:textSize="22sp"
                 android:textStyle="bold"
-                android:textColor="@color/teal"
-                android:background="@drawable/button_radius"
-                app:backgroundTint="@color/gray"/>
+                app:backgroundTint="@color/gray" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="2dp"
-            android:layout_marginBottom="2dp">
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:orientation="horizontal">
 
             <Button
                 android:id="@+id/factorialButton"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.18"
-                android:text="x!"
                 android:layout_marginStart="2dp"
                 android:layout_marginEnd="2dp"
-                android:padding="20dp"
-                android:textSize="22sp"
-                android:textColor="@color/teal"
+                android:layout_weight="0.18"
                 android:background="@drawable/button_radius"
-                app:backgroundTint="@color/white"/>
+                android:padding="20dp"
+                android:text="x!"
+                android:textColor="@color/teal"
+                android:textSize="22sp"
+                app:backgroundTint="@color/white" />
 
             <Button
                 android:id="@+id/sevenButton"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.18"
-                android:text="7"
                 android:layout_marginStart="2dp"
                 android:layout_marginEnd="2dp"
+                android:layout_weight="0.18"
+                android:background="@drawable/button_radius"
                 android:padding="20dp"
+                android:text="7"
+                android:textColor="@color/teal"
                 android:textSize="22sp"
                 android:textStyle="bold"
-                android:textColor="@color/teal"
-                android:background="@drawable/button_radius"
-                app:backgroundTint="@color/white"/>
+                app:backgroundTint="@color/white" />
 
             <Button
                 android:id="@+id/eightButton"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.18"
-                android:text="8"
                 android:layout_marginStart="2dp"
                 android:layout_marginEnd="2dp"
+                android:layout_weight="0.18"
+                android:background="@drawable/button_radius"
                 android:padding="20dp"
+                android:text="8"
+                android:textColor="@color/teal"
                 android:textSize="22sp"
                 android:textStyle="bold"
-                android:textColor="@color/teal"
-                android:background="@drawable/button_radius"
-                app:backgroundTint="@color/white"/>
+                app:backgroundTint="@color/white" />
 
             <Button
                 android:id="@+id/nineButton"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.18"
-                android:text="9"
                 android:layout_marginStart="2dp"
                 android:layout_marginEnd="2dp"
+                android:layout_weight="0.18"
+                android:background="@drawable/button_radius"
                 android:padding="20dp"
+                android:text="9"
+                android:textColor="@color/teal"
                 android:textSize="22sp"
                 android:textStyle="bold"
-                android:textColor="@color/teal"
-                android:background="@drawable/button_radius"
-                app:backgroundTint="@color/white"/>
+                app:backgroundTint="@color/white" />
 
             <Button
                 android:id="@+id/multiplyButton"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.18"
-                android:text="x"
                 android:layout_marginStart="2dp"
                 android:layout_marginEnd="2dp"
+                android:layout_weight="0.18"
+                android:background="@drawable/button_radius"
                 android:padding="20dp"
+                android:text="x"
+                android:textColor="@color/teal"
                 android:textSize="22sp"
                 android:textStyle="bold"
-                android:textColor="@color/teal"
-                android:background="@drawable/button_radius"
-                app:backgroundTint="@color/gray"/>
+                app:backgroundTint="@color/gray" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="2dp"
-            android:layout_marginBottom="2dp">
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:orientation="horizontal">
 
             <Button
                 android:id="@+id/onedivxButton"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.18"
-                android:text="1/x"
                 android:layout_marginStart="2dp"
                 android:layout_marginEnd="2dp"
-                android:padding="20dp"
-                android:textSize="22sp"
-                android:textColor="@color/teal"
+                android:layout_weight="0.18"
                 android:background="@drawable/button_radius"
-                app:backgroundTint="@color/white"/>
+                android:padding="20dp"
+                android:text="1/x"
+                android:textColor="@color/teal"
+                android:textSize="22sp"
+                app:backgroundTint="@color/white" />
 
             <Button
                 android:id="@+id/fourButton"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.18"
-                android:text="4"
                 android:layout_marginStart="2dp"
                 android:layout_marginEnd="2dp"
+                android:layout_weight="0.18"
+                android:background="@drawable/button_radius"
                 android:padding="20dp"
+                android:text="4"
+                android:textColor="@color/teal"
                 android:textSize="22sp"
                 android:textStyle="bold"
-                android:textColor="@color/teal"
-                android:background="@drawable/button_radius"
-                app:backgroundTint="@color/white"/>
+                app:backgroundTint="@color/white" />
 
             <Button
                 android:id="@+id/fiveButton"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.18"
-                android:text="5"
                 android:layout_marginStart="2dp"
                 android:layout_marginEnd="2dp"
+                android:layout_weight="0.18"
+                android:background="@drawable/button_radius"
                 android:padding="20dp"
+                android:text="5"
+                android:textColor="@color/teal"
                 android:textSize="22sp"
                 android:textStyle="bold"
-                android:textColor="@color/teal"
-                android:background="@drawable/button_radius"
-                app:backgroundTint="@color/white"/>
+                app:backgroundTint="@color/white" />
 
             <Button
                 android:id="@+id/sixButton"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.18"
-                android:text="6"
                 android:layout_marginStart="2dp"
                 android:layout_marginEnd="2dp"
+                android:layout_weight="0.18"
+                android:background="@drawable/button_radius"
                 android:padding="20dp"
+                android:text="6"
+                android:textColor="@color/teal"
                 android:textSize="22sp"
                 android:textStyle="bold"
-                android:textColor="@color/teal"
-                android:background="@drawable/button_radius"
-                app:backgroundTint="@color/white"/>
+                app:backgroundTint="@color/white" />
 
             <Button
                 android:id="@+id/minusButton"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.18"
-                android:text="-"
                 android:layout_marginStart="2dp"
                 android:layout_marginEnd="2dp"
+                android:layout_weight="0.18"
+                android:background="@drawable/button_radius"
                 android:padding="20dp"
+                android:text="-"
+                android:textColor="@color/teal"
                 android:textSize="22sp"
                 android:textStyle="bold"
-                android:textColor="@color/teal"
-                android:background="@drawable/button_radius"
-                app:backgroundTint="@color/gray"/>
+                app:backgroundTint="@color/gray" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginTop="2dp"
-            android:layout_marginBottom="2dp">
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:orientation="horizontal">
 
             <Button
                 android:id="@+id/piButton"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.18"
-                android:text="π"
                 android:layout_marginStart="2dp"
                 android:layout_marginEnd="2dp"
-                android:padding="20dp"
-                android:textSize="22sp"
-                android:textColor="@color/teal"
+                android:layout_weight="0.18"
                 android:background="@drawable/button_radius"
-                app:backgroundTint="@color/white"/>
+                android:padding="20dp"
+                android:text="π"
+                android:textColor="@color/teal"
+                android:textSize="22sp"
+                app:backgroundTint="@color/white" />
 
             <Button
                 android:id="@+id/oneButton"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.18"
-                android:text="1"
                 android:layout_marginStart="2dp"
                 android:layout_marginEnd="2dp"
+                android:layout_weight="0.18"
+                android:background="@drawable/button_radius"
                 android:padding="20dp"
+                android:text="1"
+                android:textColor="@color/teal"
                 android:textSize="22sp"
                 android:textStyle="bold"
-                android:textColor="@color/teal"
-                android:background="@drawable/button_radius"
-                app:backgroundTint="@color/white"/>
+                app:backgroundTint="@color/white" />
 
             <Button
                 android:id="@+id/twoButton"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.18"
-                android:text="2"
                 android:layout_marginStart="2dp"
                 android:layout_marginEnd="2dp"
+                android:layout_weight="0.18"
+                android:background="@drawable/button_radius"
                 android:padding="20dp"
+                android:text="2"
+                android:textColor="@color/teal"
                 android:textSize="22sp"
                 android:textStyle="bold"
-                android:textColor="@color/teal"
-                android:background="@drawable/button_radius"
-                app:backgroundTint="@color/white"/>
+                app:backgroundTint="@color/white" />
 
             <Button
                 android:id="@+id/threeButton"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.18"
-                android:text="3"
                 android:layout_marginStart="2dp"
                 android:layout_marginEnd="2dp"
+                android:layout_weight="0.18"
+                android:background="@drawable/button_radius"
                 android:padding="20dp"
+                android:text="3"
+                android:textColor="@color/teal"
                 android:textSize="22sp"
                 android:textStyle="bold"
-                android:textColor="@color/teal"
-                android:background="@drawable/button_radius"
-                app:backgroundTint="@color/white"/>
+                app:backgroundTint="@color/white" />
 
             <Button
                 android:id="@+id/SumButton"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.18"
-                android:text="+"
                 android:layout_marginStart="2dp"
                 android:layout_marginEnd="2dp"
+                android:layout_weight="0.18"
+                android:background="@drawable/button_radius"
                 android:padding="20dp"
+                android:text="+"
+                android:textColor="@color/teal"
                 android:textSize="22sp"
                 android:textStyle="bold"
-                android:textColor="@color/teal"
-                android:background="@drawable/button_radius"
-                app:backgroundTint="@color/gray"/>
+                app:backgroundTint="@color/gray" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_height="107dp"
             android:layout_marginTop="2dp"
-            android:layout_marginBottom="2dp">
+            android:layout_marginBottom="2dp"
+            android:orientation="horizontal">
 
             <Button
                 android:id="@+id/ConvertButton"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.18"
-                android:text="⇌"
+                android:layout_height="97dp"
                 android:layout_marginStart="2dp"
                 android:layout_marginEnd="2dp"
-                android:padding="20dp"
-                android:textSize="22sp"
-                android:textColor="@color/teal"
+                android:layout_weight="0.18"
                 android:background="@drawable/button_radius"
-                app:backgroundTint="@color/white"/>
+                android:padding="20dp"
+                android:text="⇌"
+                android:textColor="@color/teal"
+                android:textSize="22sp"
+                app:backgroundTint="@color/white" />
 
             <Button
                 android:id="@+id/eButton"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.18"
-                android:text="e"
+                android:layout_height="91dp"
                 android:layout_marginStart="2dp"
                 android:layout_marginEnd="2dp"
+                android:layout_weight="0.18"
+                android:background="@drawable/button_radius"
                 android:padding="20dp"
+                android:text="e"
+                android:textColor="@color/teal"
                 android:textSize="22sp"
                 android:textStyle="bold"
-                android:textColor="@color/teal"
-                android:background="@drawable/button_radius"
-                app:backgroundTint="@color/white"/>
+                app:backgroundTint="@color/white" />
 
             <Button
                 android:id="@+id/zeroButton"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="0.18"
-                android:text="0"
                 android:layout_marginStart="2dp"
                 android:layout_marginEnd="2dp"
+                android:layout_weight="0.18"
+                android:background="@drawable/button_radius"
                 android:padding="20dp"
+                android:text="0"
+                android:textColor="@color/teal"
                 android:textSize="22sp"
                 android:textStyle="bold"
-                android:textColor="@color/teal"
-                android:background="@drawable/button_radius"
-                app:backgroundTint="@color/white"/>
+                app:backgroundTint="@color/white" />
 
             <Button
                 android:id="@+id/pointButton"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.18"
-                android:text=","
+                android:layout_height="88dp"
                 android:layout_marginStart="2dp"
                 android:layout_marginEnd="2dp"
+                android:layout_weight="0.18"
+                android:background="@drawable/button_radius"
                 android:padding="20dp"
+                android:text=","
+                android:textColor="@color/teal"
                 android:textSize="22sp"
                 android:textStyle="bold"
-                android:textColor="@color/teal"
-                android:background="@drawable/button_radius"
-                app:backgroundTint="@color/white"/>
+                app:backgroundTint="@color/white" />
 
             <Button
                 android:id="@+id/equalButton"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.18"
-                android:text="="
+                android:layout_height="107dp"
                 android:layout_marginStart="2dp"
                 android:layout_marginEnd="2dp"
+                android:layout_weight="0.18"
+                android:background="@drawable/button_radius"
                 android:padding="20dp"
+                android:text="="
+                android:textColor="@color/black"
                 android:textSize="22sp"
                 android:textStyle="bold"
-                android:textColor="@color/black"
-                android:background="@drawable/button_radius"
-                app:backgroundTint="@color/teal"/>
+                app:backgroundTint="@color/teal" />
 
         </LinearLayout>
 
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AAAAAAA" />
+
     </LinearLayout>
 
-</LinearLayout>
+</FrameLayout>
